@@ -6,7 +6,7 @@ import { Toc } from 'pliny/mdx-plugins/remark-toc-headings'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 interface Props {
   children: ReactNode
-  toc: Toc
+  toc: string
   content: Omit<Authors, '_id' | '_raw' | 'body'>
 }
 export default function ResumeLayout({ children, content, toc }: Props) {
@@ -26,7 +26,7 @@ export default function ResumeLayout({ children, content, toc }: Props) {
         <div className="border border-t border-gray-200 dark:border-gray-700" />
         <main className="mx-auto my-12 max-w-screen-xl gap-12 space-y-12 rounded-md bg-gray-100 p-3 md:flex md:space-y-0 md:p-8">
           <div className="table-of-content top-20 self-start pl-0 text-gray-500 md:sticky">
-            <TOCInline toc={toc} toHeading={2} />
+            <TOCInline toc={toc as unknown as Toc} toHeading={2} />
           </div>
           <div className="hidden border-l border-gray-300 md:block" />
           <div className="content prose prose-slate grow table-auto border-collapse space-y-5 text-justify leading-6 text-gray-900">
