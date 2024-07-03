@@ -6,11 +6,10 @@ const siteMetadata = {
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://blog-7c1rzv070-tulasirams-projects.vercel.app/',
   siteRepo: 'https://github.com/tulasiram119/blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
-  mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'tulasiramkancharla119@gmail.com',
   github: 'https://github.com/tulasiram119',
   x: 'https://x.com/TulasiramKanch1',
